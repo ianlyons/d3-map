@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<head>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+<!-- dependencies -->
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/d3/d3.min.js"></script>
+<script src="bower_components/topojson/topojson.js"></script>
+
+<!--data files -->
+<script src="pop-density.js"></script>
+<script src="usa.js"></script>
+
+<div id="container">
+	<h1>US States by Population Growth (2010-2013)</h1>
+	<div id="svgContain"></div>
+	<div id="explanation">
+		<p><h4>About the visualization</h4>
+		This map shows the state-by-state differences in population growth rate between 2010 and 2013. The darker states have higher growth rates, and you can hover over the individual states to see the exact statistic.</p>
+
+		<p>I made this visualization using D3.js, a JavaScript library that facilitates the pairing of data with DOM elements in an exceptionally simple and accessible manner. I also used TopoJSON, a library by Mike Bostock (also the creator of D3) that helps with the rendering of GeoJSON files.  Once you get a hang of the syntax and stringing patterns, they’re both quite easy to work with, so let’s dive into how one could go about binding data to a map. </p>
+	</div>
+</div>
+
+<!-- application files --> 
+<script src="app.js"></script>
+</body>
+</html>

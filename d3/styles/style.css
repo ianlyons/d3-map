@@ -1,0 +1,41 @@
+body {
+	background-color: #f0f0f0;
+	font-family: Georgia, serif;
+	margin-top: 10px;
+}
+
+#container {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+h1 {
+	font-size: 40px;
+	color: #4d4d4d;
+	text-align: center;
+}
+
+path {
+	fill: #324F17;
+	filter: drop-shadow( -5px -5px 5px #222 );
+	-webkit-filter: drop-shadow( -5px -5px 5px #222 );
+}
+
+path:hover {
+	stroke: white;
+	stroke-width: 2px;
+}
+
+.state-tooltip {
+	position: absolute;
+	height: 36px; 
+	width: 200px;
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	border: solid #222 1px;
+	background-color: #f0f0f0;
+	padding: 12px 8px;
+	box-shadow: 2px 2px 5px #222;
+	visibility: hidden;
+	opacity: 0.9;
+}
